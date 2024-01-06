@@ -48,7 +48,7 @@ def main():
     if not os.path.exists(EXTRACTED_TEXT):
         os.makedirs(EXTRACTED_TEXT)  
 
-    input_file_path = os.path.join(EXTRACTED_TEXT, 'output.txt')
+    input_file_path = os.path.join(EXTRACTED_TEXT, 'words.txt')
     output_file_path = os.path.join(EXTRACTED_TEXT, 'output_definitions_and_examples_02.txt')
 
     words = read_words_from_file(input_file_path)

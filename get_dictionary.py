@@ -8,7 +8,6 @@ import re
 
 pytesseract.pytesseract.tesseract_cmd = '/opt/homebrew/bin/tesseract'
 
-
 def handle_paths():
     SCRIPT_PATH = os.path.abspath(__file__)
     SCRIPT_DIR = os.path.dirname(SCRIPT_PATH)
@@ -18,7 +17,6 @@ def handle_paths():
     # print(f'Script directory: {SCRIPT_DIR}')
     # print(f'Absolute path of the current working directory: {CURRENT_DIR}')
     return SCRIPT_DIR
-
 
 def pdf_to_images(PDF_PATH, IMAGES_DIR):
     pdf = fitz.open(PDF_PATH)
@@ -108,7 +106,6 @@ def preprocess_text_from_file(file_path):
     with open(file_path, 'w') as file:
         file.write(processed_text)
 
-
 def main():
     # Define a list of English stop words
     stop_words = set([
@@ -132,7 +129,7 @@ def main():
     PROCESSED_IMAGES_DIR = os.path.join(SCRIPT_DIR, 'processed_images')
     IMAGES_DIR = os.path.join(SCRIPT_DIR, 'images')
     EXTRACTED_TEXT_DIR = os.path.join(SCRIPT_DIR, 'extracted_text')
-    output_text_file = os.path.join(EXTRACTED_TEXT_DIR, 'output.txt')
+    output_text_file = os.path.join(EXTRACTED_TEXT_DIR, 'words.txt')
     coords = (37, 82, 152, 547)
 
     if not os.path.exists(IMAGES_DIR):
