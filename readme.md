@@ -1,19 +1,29 @@
-# IELTS Helper Project
+# IELTS_HELPER
 
-## Description
-IELTS Helper is a Python-based tool designed to assist in preparing for the IELTS exam. It processes a given IELTS vocabulary PDF by extracting images, cropping specific regions, converting them to black and white, and extracting English words using OCR. The words are then saved in a text file.
+This repository contains resources and scripts to assist with IELTS vocabulary preparation.
 
-## Project Structure
-- `main.py`: The main script for PDF processing and image handling.
-- `image_selector.py`: A GUI tool to select regions from an image.
-- `requirements.txt`: Lists all Python dependencies for the project.
-- `images/`: Directory for storing extracted images from the PDF.
-- `processed_images/`: Directory for storing cropped images.
-- `extracted_text/`: Directory where extracted text files are saved.
-- `IELTS ADVANCED VOCABS.pdf`: Sample input PDF file.
+## Contents
+- Python scripts for data retrieval and processing (`get_coordinates.py`, `get_dictionary.py`, `scrape_dictionary.py`).
+- Vocabulary lists in PDF format (`IELTS ADVANCED VOCABS.pdf`, `IELTS VOCABS.pdf`).
+- Text extraction and processing tools.
 
-## Installation
-Ensure you have Python 3.x installed on your system. Then install the required Python libraries:
+## Setup
 
-```bash
-pip install -r requirements.txt
+1. Clone the repository.
+2. Install dependencies: `pip install -r requirements.txt`.
+
+## Usage
+
+Run scripts with Python to perform tasks such as scraping dictionary data or processing images.
+
+## Support
+
+Refer to `readme.md` for guidance, or contact the maintainers.
+
+## Contributions
+
+Feel free to fork the project and submit pull requests.
+
+## License
+
+This project is open-source and available under the MIT License.
